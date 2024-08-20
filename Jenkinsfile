@@ -8,7 +8,7 @@ pipeline{
 				git branch: 'main', url: 'https://github.com/faldesaivishvaja/git-jenkins-docker.git'
                 }
 		}
-		stage('Docker build and publish nginx image'){
+		stage('Docker build nginx image'){
 		    steps{
 				bat 'docker build -t vishvajafaldesai/nginx .'
 		    }
