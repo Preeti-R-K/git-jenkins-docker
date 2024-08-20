@@ -18,10 +18,5 @@ pipeline{
 				bat 'docker run --name nginx -p 3000:80 vishvajafaldesai/nginx'
 		    }
 		}
-    		}
-		post{
-	           always{
-	                bat 'docker rm -f nginx'
-	                }
-	            }
+    }
 }
