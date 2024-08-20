@@ -13,7 +13,7 @@ pipeline{
 				bat 'docker build -t vishvajafaldesai/nginx .'
 		    }
 		}
-		stage('Running docker conatiners'){
+		stage('Running docker container'){
 		    steps{
 				bat 'docker run --name nginx -p 3000:80 vishvajafaldesai/nginx'
 		    }
