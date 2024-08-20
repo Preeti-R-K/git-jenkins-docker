@@ -21,7 +21,7 @@ pipeline{
     		}
 		post{
 	           always{
-	                bat 'docker rm -f vishvajafaldesai/nginx'
+	                bat 'docker rm -f nginx'
 	                }
 	            }
 }
