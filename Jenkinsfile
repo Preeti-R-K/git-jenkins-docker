@@ -8,12 +8,12 @@ pipeline{
 	}
 	stage('Docker build nginx image'){
 		    steps{
-				bat 'docker build -t vishvajafaldesai/nginx .'
+				bat 'docker build -t preetirk/nginx .'
 		    }
 		}
 	stage('Running docker container'){
 		    steps{
-				bat 'docker run --name nginx -p 3000:80 vishvajafaldesai/nginx'
+				bat 'docker run --name nginx -p 3000:80 preetirk/nginx'
 		    }
 		}
     }
