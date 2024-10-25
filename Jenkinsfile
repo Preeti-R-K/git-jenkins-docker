@@ -13,8 +13,7 @@ pipeline{
 		}
 	stage('Running docker container'){
 		    steps{
-			   bat "docker rm -f nginx || exit 0"	
-			    bat 'docker run -d --name nginx -p 3000:80 preetirk/nginx'
+			 bat 'docker run -d --name nginx -p 3000:80 preetirk/nginx'
 		    }
 		}
     }
